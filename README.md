@@ -1,4 +1,4 @@
-Official lib3mf Go Bindings [v2.3.2]
+Official lib3mf Go Bindings [v2.4.0]
 =====================================
 
 This repository contains the official Go bindings for the lib3mf library.
@@ -8,7 +8,7 @@ This repository contains the official Go bindings for the lib3mf library.
 To include lib3mf in your Go project, run the following command:
 
 ```shell
-go get github.com/3MFConsortium/lib3mf.go/v2@v2.3.2
+go get github.com/3MFConsortium/lib3mf.go/v2@v2.4.0
 ```
 
 
