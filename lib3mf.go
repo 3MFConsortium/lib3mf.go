@@ -46,8 +46,10 @@ import "C"
 
 import (
 	"fmt"
-	"unsafe"
+	"os"
+	"path/filepath"
 	"runtime"
+	"unsafe"
 )
 
 type ref = C.Lib3MFHandle
