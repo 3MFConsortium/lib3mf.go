@@ -1,4 +1,4 @@
-Official lib3mf Go Bindings [v2.4.0]
+Official lib3mf Go Bindings [v2.5.0]
 =====================================
 
 This repository contains the official Go bindings for the lib3mf library.
@@ -8,7 +8,7 @@ This repository contains the official Go bindings for the lib3mf library.
 To include lib3mf in your Go project, run the following command:
 
 ```shell
-go get github.com/3MFConsortium/lib3mf.go/v2@v2.4.0
+go get github.com/3MFConsortium/lib3mf.go/v2@v2.5.0
 ```
 
 
@@ -36,3 +36,24 @@ func main() {
 ## About GetWrapper()
 
 The `GetWrapper()` function is a convenience method similar to the one in the lib3mf Python bindings. It simplifies handling the library paths for lib3mf, so you do not need to use `LoadLibrary()` manually to load the lib3mf library.
+
+## Preparing a New Release
+
+Use `prepare_go_release.py` to sync this repository from an SDK release:
+
+```shell
+python prepare_go_release.py 2.5.0
+```
+
+By default, this downloads `lib3mf_sdk_v<version>.zip` from the lib3mf GitHub release artifacts.
+Use `--dry-run` to preview changes:
+
+```shell
+python prepare_go_release.py 2.5.0 --dry-run
+```
+
+For local/offline artifacts, override source:
+
+```shell
+python prepare_go_release.py 2.5.0 --source /path/to/lib3mf_sdk_v2.5.0.zip --dry-run
+```
